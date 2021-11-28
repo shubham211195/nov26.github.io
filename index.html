@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Assingments</h2>
+    <script>
+        //factorial
+        var n=prompt("enter your number")
+        var t=1;
+        for(var i=1;i<=n;i=i+1){
+            t=t*i;
+        }
+        console.log(t)
+        //anagram
+        function checkanagram(a,b){
+       
+        var len1=a.length;
+        var len2=b.length;
+        if(len1!=len2){
+            console.log("invalid input");
+            return;
+        }
+        var str1=a.split('').sort().join('');
+        var str2=b.split('').sort().join('');
+        if(str1==str2){
+            console.log("it is anagram");
+        }
+        else{
+            console.log("not anagram")
+        }
+
+    }
+        var din=checkanagram("new","wen");
+        
+        
+    
+
+      
+    </script>
+</body>
+</html>
